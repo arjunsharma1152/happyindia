@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: rgb(178, 178, 178);
+
+}
+
+.container {
+  height: 110vw;
+  margin: 0;
+  padding: 0;
+  background-image: url('bg.jpg');
+  background-color: rgb(30, 30, 30);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.logo {
+  width: 25vw;
+  margin-top: 5vw;
+}
+
+.main-heading {
+  color: #facf26;
+  font-size: 7vw;
+}
+
+iframe {
+  border-radius: 3%;
+  width: 80vw;
+  height: 50vw;
+}
+
+.suggestion-box {
+  text-align: center;
+  margin: 0;
+  padding: 2vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(178, 178, 178);
+}
+
+.textarea {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+  background-color: #f9f9f9;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #facf26;
+}
