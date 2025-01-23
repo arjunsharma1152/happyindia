@@ -1,7 +1,9 @@
 body {
   margin: 0;
   background-color: rgb(178, 178, 178);
-
+  font-family: "Varela Round", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .container {
@@ -71,5 +73,5 @@ iframe {
 }
 
 .submit-button:hover {
-  background-color: #facf26;
+  background-color: #cfb757;
 }
