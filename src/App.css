@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  height: 110vw;
+  height: 130vw;
   margin: 0;
   padding: 0;
   background-image: url('bg.jpg');
@@ -30,6 +30,11 @@ body {
 .main-heading {
   color: #facf26;
   font-size: 7vw;
+}
+
+.video-heading {
+  color: white;
+  font-size: 6vw;
 }
 
 iframe {

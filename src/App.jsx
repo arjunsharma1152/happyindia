@@ -7,14 +7,16 @@ const App = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [suggestion, setSuggestion] = useState(null);
   const [videoUrl, setVideoUrl] = useState('');
+  const [videoHeading, setVideoHeading] = useState('');
 
   // Fetch the YouTube video URL when the component loads
   useEffect(() => {
-    fetch('https://happyindiaback.onrender.com/fetchdata')
+    fetch('https://happyindiaback.onrender.com/fetchData')
       .then((response) => response.json())
       .then((data) => {
-        if (data && data.data) {
-          setVideoUrl(data.data.replace('youtu.be/', 'www.youtube.com/embed/'));
+        if (data) {
+          setVideoUrl(data.link.replace('youtu.be/', 'www.youtube.com/embed/'));
+          setVideoHeading(data.title);
         }
       })
       .catch((error) => console.error('Error fetching video URL:', error));
@@ -55,6 +57,7 @@ const App = () => {
       <div className="container">
         <img src={logo} className="logo" alt="Logo" />
         <p className="main-heading">Let's make INDIA happy</p>
+        <p className='video-heading'>{videoHeading}</p>
         <div style={{ marginTop: '20px' }}>
           {videoUrl ? (
             <iframe
